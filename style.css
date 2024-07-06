@@ -214,3 +214,71 @@ h1{
 .container.active .toggle-right {
     transform: translateX(200%);
 }
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .form-container {
+        width: 100%;
+        position: relative;
+    }
+
+    .sign-in, .sign-up {
+        width: 100%;
+        position: relative;
+    }
+
+    .toggle-container {
+        width: 100%;
+        left: 0;
+        top: initial;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .container.active .toggle-container {
+        transform: translateX(0);
+    }
+
+    .toggle {
+        width: 100%;
+        height: auto;
+        left: 0;
+        transform: translateX(0);
+    }
+
+    .container.active .toggle {
+        transform: translateX(0);
+    }
+
+    .toggle-panel {
+        width: 100%;
+        position: relative;
+    }
+
+    .toggle-left, .toggle-right {
+        transform: translateX(0);
+    }
+
+    .container.active .toggle-left, .container.active .toggle-right {
+        transform: translateX(0);
+    }
+
+    .container.active .sign-in, .container.active .sign-up {
+        transform: translateX(0);
+    }
+
+    .sign-in, .sign-up {
+        opacity: 1;
+        z-index: 5;
+        animation: none;
+    }
+}
+
